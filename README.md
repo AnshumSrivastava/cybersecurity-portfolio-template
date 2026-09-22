@@ -6,7 +6,7 @@ A practical record of my journey in cybersecurity — documenting what I have le
 
 ## About Me
 
-**Name:** [Your Name]
+**Name:** Anshum Srivastava
 **College:** [Your College]
 **Course / Program:** [Course Name]
 **Location:** [City, Country]
