@@ -1,0 +1,11 @@
+Starting Nmap 7.94 ( https://nmap.org )
+Nmap scan report for 192.168.1.50
+Host is up (0.00035s latency).
+Not shown: 65531 closed tcp ports (reset)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+443/tcp  open  https
+3306/tcp open  mysql
+
+Nmap done: 1 IP address (1 host up) scanned in 12.43 seconds

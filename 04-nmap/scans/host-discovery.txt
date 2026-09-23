@@ -1,0 +1,14 @@
+Starting Nmap 7.94 ( https://nmap.org )
+Nmap scan report for 192.168.1.1
+Host is up (0.0012s latency).
+MAC Address: 00:11:22:33:44:55 (Router Gateway)
+
+Nmap scan report for 192.168.1.50
+Host is up (0.0004s latency).
+MAC Address: AA:BB:CC:DD:EE:FF (Lab Target Server)
+
+Nmap scan report for 192.168.1.105
+Host is up (0.0001s latency).
+MAC Address: 12:34:56:78:9A:BC (Workstation)
+
+Nmap done: 256 IP addresses (3 hosts up) scanned in 2.15 seconds

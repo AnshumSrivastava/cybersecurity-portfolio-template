@@ -6,267 +6,91 @@ A practical record of my journey in cybersecurity — documenting what I have le
 
 ## About Me
 
-**Name:** Anshum Srivastava
-**College:** [Your College]
-**Course / Program:** [Course Name]
-**Location:** [City, Country]
-
-### Interests
-
-* Cybersecurity
-* Network Security
-* Linux
-* Security Operations
-* Penetration Testing
-* Automation
-* Incident Response
+**Name:** Anshum Srivastava  
+**Role:** Cybersecurity Student & Aspiring Security Analyst  
+**Focus:** Defensive Security, Linux, Network Analysis, Automation, and Incident Response  
 
 ---
 
-## My Cybersecurity Journey
+## The Learning Progression
 
-This repository documents my progression from cybersecurity fundamentals to practical security projects and an end-to-end incident response simulation.
+The class is not a collection of disconnected tools. The projects progressively build the skills of a cybersecurity practitioner:
 
 ```text
-Fundamentals
-     ↓
-Security Labs
-     ↓
-Practical Projects
-     ↓
-Incident Response
+01 Linux             → "I can operate the system."
+   ↓
+02 Bandit            → "I can investigate the system."
+   ↓
+03 Networking        → "I understand how systems communicate."
+   ↓
+04 Nmap              → "I can discover exposed services."
+   ↓
+05 Wireshark         → "I can inspect network evidence."
+   ↓
+06 Bash              → "I can automate repetitive work."
+   ↓
+07 Dosti Tracker     → "I can build a useful automation."
+   ↓
+08 Local CTF         → "I can combine multiple skills."
+   ↓
+09 Recon             → "I can systematically gather information."
+   ↓
+10 Log Parser        → "I can turn raw security data into structured data."
 ```
 
 ---
 
-# Projects
+## Projects Directory
 
-## Linux Fundamentals
+### [01 — Linux Fundamentals](./01-linux/)
+Operating Linux from the command line: navigation, filesystem manipulation, permissions, process management, and core utilities.
+* **Key files:** [`commands.md`](./01-linux/commands.md), [`tasks.md`](./01-linux/tasks.md)
 
-**Path:** [`linux-fundamentals/`](./linux-fundamentals/)
+### [02 — Linux Bandit Challenge](./02-bandit/)
+Progressive command-line problem-solving across hidden files, encoded streams, and multi-format archives.
+* **Key files:** [`levels.md`](./02-bandit/levels.md)
 
-Fundamentals of working with Linux systems, including the command line, filesystem, permissions, processes, users, and shell operations.
+### [03 — Networking Fundamentals](./03-networking/)
+Deep dive into device addressing, subnets, gateways, socket inspection, DNS resolution, and TCP vs UDP transport.
+* **Key files:** [`networking-notes.md`](./03-networking/networking-notes.md), [`commands.md`](./03-networking/commands.md)
 
----
+### [04 — Network Reconnaissance With Nmap](./04-nmap/)
+Systematic host discovery, port scanning, and service version detection against authorized targets.
+* **Key files:** [`findings.md`](./04-nmap/findings.md), [`scans/`](./04-nmap/scans/)
 
-## Networking Fundamentals
+### [05 — Wireshark Network Investigation](./05-wireshark/)
+Packet inspection, stream reconstruction, protocol validation, and traffic anomaly identification.
+* **Key files:** [`findings.md`](./05-wireshark/findings.md), [`captures/`](./05-wireshark/captures/)
 
-**Path:** [`networking-fundamentals/`](./networking-fundamentals/)
+### [06 — Bash Scripting](./06-bash/)
+Foundations of automation: variables, user inputs, conditions, loops, and reusable modular functions.
+* **Key files:** [`basics/`](./06-bash/basics/)
 
-Practical exploration of networking concepts including IP addresses, ports, protocols, DNS, TCP/IP, and network troubleshooting.
+### [07 — Dosti Tracker](./07-dosti-tracker/)
+Command-line habit and accountability tracker combining variables, loops, conditionals, functions, and file persistence.
+* **Key files:** [`dosti.sh`](./07-dosti-tracker/dosti.sh)
 
----
+### [08 — Local Cybersecurity CTF](./08-local-ctf/)
+Controlled offline multi-discipline challenge combining Linux, networking, and reconnaissance.
+* **Key files:** [`rules.md`](./08-local-ctf/rules.md), [`challenges.md`](./08-local-ctf/challenges.md)
 
-## Bandit
+### [09 — Reconnaissance Investigation](./09-recon/)
+Systematic passive footprinting, domain intelligence, DNS mapping, and HTTP header security assessments.
+* **Key files:** [`target.md`](./09-recon/target.md), [`findings.md`](./09-recon/findings.md)
 
-**Path:** [`bandit/`](./bandit/)
-
-Practical Linux and cybersecurity challenges completed through the OverTheWire Bandit environment.
-
----
-
-## Bash & Dosti Tracker
-
-**Path:** [`bash-and-dosti-tracker/`](./bash-and-dosti-tracker/)
-
-A Bash scripting project developed to apply command-line concepts, variables, user input, functions, conditionals, loops, and file handling to a practical problem.
-
----
-
-## Home / Lab Network Security Audit
-
-**Path:** [`network-security-audit/`](./network-security-audit/)
-
-A security assessment of a controlled home/lab network involving network mapping, traffic analysis, port and service discovery, and documentation of the baseline security posture.
-
-**Tools:**
-
-* Nmap
-* Wireshark
-* Linux networking tools
+### [10 — Generic Log Parser](./10-log-parser/)
+Decoupled, generic pattern-driven log parser engine in Python converting raw log streams into structured JSON using external Markdown regex definitions.
+* **Key files:** [`parser.py`](./10-log-parser/parser.py), [`Patterns/`](./10-log-parser/Patterns/), [`Logs/`](./10-log-parser/Logs/)
 
 ---
 
-## Automated Log Monitoring & Hardening
-
-**Path:** [`log-monitoring-hardening/`](./log-monitoring-hardening/)
-
-A toolkit for monitoring Linux logs and checking systems against selected security hardening requirements, identifying misconfigurations and generating remediation guidance.
-
-**Technologies:**
-
-* Bash
-* Python
-* Linux
-* CIS Benchmarks
-
----
-
-## Web Application Penetration Test
-
-**Path:** [`web-application-pentest/`](./web-application-pentest/)
-
-A controlled black-box security assessment of a deliberately vulnerable web application, covering selected OWASP Top 10 vulnerabilities and professional security reporting.
-
-**Targets:**
-
-* DVWA
-* OWASP Juice Shop
-
-**Focus:**
-
-* Vulnerability discovery
-* Exploitation
-* Evidence collection
-* Risk assessment
-* Remediation
-
----
-
-## Vulnerability Assessment
-
-**Path:** [`vulnerability-assessment/`](./vulnerability-assessment/)
-
-An authenticated vulnerability assessment of a controlled lab environment, including vulnerability discovery, validation, prioritisation, and remediation planning.
-
-**Tools:**
-
-* Nessus / OpenVAS
-* CVSS
-
----
-
-## SOC Monitoring
-
-**Path:** [`soc-monitoring/`](./soc-monitoring/)
-
-A simulated Security Operations Center environment involving log ingestion, detection rules, alert generation, investigation, and escalation of suspicious activity.
-
-**Technologies:**
-
-* Splunk / ELK
-* Log analysis
-* Detection rules
-* Incident investigation
-
----
-
-# Incident Response Capstone
-
-**Path:** [`incident-response-capstone/`](./incident-response-capstone/)
-
-An end-to-end incident response simulation based on a controlled ransomware/phishing scenario.
-
-The project follows the incident response lifecycle:
-
-```text
-Detect
-  ↓
-Contain
-  ↓
-Eradicate
-  ↓
-Recover
-  ↓
-Lessons Learned
-```
-
-The investigation and response are documented using recognised security frameworks and controls.
-
----
-
-# Skills
-
-### Operating Systems
-
-* Linux
-* Windows
-
-### Networking
-
-* TCP/IP
-* DNS
-* Network reconnaissance
-* Packet analysis
-
-### Security
-
-* Vulnerability Assessment
-* Penetration Testing
-* Network Security
-* Security Monitoring
-* Incident Response
-
-### Tools
-
-* Nmap
-* Wireshark
-* Nessus / OpenVAS
-* Splunk / ELK
-* Git & GitHub
-
-### Programming & Automation
-
-* Bash
-* Python
-
----
-
-# Methodology
-
-For each project, I aim to follow a consistent process:
-
-```text
-Understand
-    ↓
-Plan
-    ↓
-Investigate
-    ↓
-Implement
-    ↓
-Analyse
-    ↓
-Document
-    ↓
-Reflect
-```
-
-Each project contains its own documentation, evidence, code, findings, and conclusions.
-
----
-
-# Learning & Reflection
-
-### What I have learned
-
-* [Learning 1]
-* [Learning 2]
-* [Learning 3]
-
-### Challenges I have faced
-
-* [Challenge 1]
-* [Challenge 2]
-
-### What I want to learn next
-
-* [Next topic]
-* [Next topic]
-
----
-
-# Disclaimer
-
-All security testing and exploitation documented in this repository was performed in controlled environments, intentionally vulnerable applications, or systems for which I had explicit authorization.
-
-This repository is intended for educational and defensive security purposes.
-
----
-
-## Contact
-
-**GitHub:** [GitHub Profile](https://github.com/USERNAME)
-**LinkedIn:** [LinkedIn Profile](https://linkedin.com/in/USERNAME)
-**Email:** [Email Address]
-
+## Project Documentation Standard
+
+Every project in this portfolio adheres to the following documentation criteria:
+1. What problem were we solving?
+2. What did we build?
+3. What tools did we use?
+4. How does it work?
+5. What did we observe?
+6. What did we learn?
+7. What evidence proves we completed it?

@@ -1,0 +1,22 @@
+Starting Nmap 7.94 ( https://nmap.org )
+Nmap scan report for 192.168.1.50
+Host is up (0.00030s latency).
+
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.6 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 71:8f:90:3d:e8:09:12:44:66:78:90:12:34:56:78:90 (ECDSA)
+|_  256 99:aa:bb:cc:dd:ee:ff:00:11:22:33:44:55:66:77:88 (ED25519)
+80/tcp   open  http    Apache httpd 2.4.52 ((Ubuntu))
+|_http-server-header: Apache/2.4.52 (Ubuntu)
+|_http-title: Lab Intranet Portal
+443/tcp  open  ssl/http Apache httpd 2.4.52 ((Ubuntu))
+|_http-server-header: Apache/2.4.52 (Ubuntu)
+|_ssl-date: TLS randomness does not represent time
+3306/tcp open  mysql   MySQL 8.0.35
+| mysql-info: 
+|_  Protocol: 10
+|_  Version: 8.0.35
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 9.18 seconds
