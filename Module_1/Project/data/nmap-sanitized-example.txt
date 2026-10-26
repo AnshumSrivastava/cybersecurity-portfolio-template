@@ -1,0 +1,11 @@
+# Example only — synthetic lab labels, not evidence from a real network
+# Command: nmap -sT -sV --version-light --reason -Pn -p 22,80,443 LAB-WEB-01
+Nmap scan report for LAB-WEB-01 (192.0.2.25)
+Host is up.
+PORT    STATE  SERVICE  VERSION
+22/tcp  closed ssh
+80/tcp  open   http     Example HTTP service
+443/tcp open   https    Example TLS service
+
+# Interpretation: this is a limited TCP/service observation, not proof of
+# patch state, authentication strength, application security, or compromise.

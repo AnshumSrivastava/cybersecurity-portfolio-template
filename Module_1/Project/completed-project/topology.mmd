@@ -1,0 +1,11 @@
+flowchart LR
+  Upstream((Upstream / excluded)) -->|unassessed| Router[LAB-RTR\n192.0.2.1\nNAT + firewall]
+  Router --> Switch[LAB access segment\n192.0.2.0/24]
+  Switch --> Analyst[ANALYST-01\n192.0.2.10\nApproved observation source]
+  Switch --> Web[LAB-WEB-01\n192.0.2.25\nHTTP 80 / HTTPS 443 observed]
+  Switch --> Dns[LAB-DNS\n192.0.2.53\nDNS observed]
+  Analyst -. limited TCP observation .-> Web
+  Analyst -. DNS + TLS packet observation .-> Dns
+  Analyst -. TLS packet observation .-> Web
+  classDef boundary fill:#fff4e5,stroke:#a85d00;
+  class Router boundary;

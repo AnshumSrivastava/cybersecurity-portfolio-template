@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<nmaprun scanner="nmap" args="nmap -sT -sV --version-light --reason -Pn -p 22,80,443 192.0.2.25" startstr="2026-10-20 09:32 UTC" version="7.95">
+  <host><status state="up"/><address addr="192.0.2.25" addrtype="ipv4"/><hostnames><hostname name="LAB-WEB-01" type="user"/></hostnames><ports>
+    <port protocol="tcp" portid="22"><state state="closed" reason="conn-refused"/><service name="ssh"/></port>
+    <port protocol="tcp" portid="80"><state state="open" reason="syn-ack"/><service name="http" product="Training HTTP redirect"/></port>
+    <port protocol="tcp" portid="443"><state state="open" reason="syn-ack"/><service name="https" product="Training TLS service"/></port>
+  </ports></host>
+</nmaprun>

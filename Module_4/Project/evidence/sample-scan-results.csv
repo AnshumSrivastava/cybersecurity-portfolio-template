@@ -1,0 +1,5 @@
+finding_id,asset_label,observation,scanner_claim,validation_state,confidence,local_context,proposed_action
+LAB-01,web-vm,Service banner reports legacy release,Potential outdated component,Needs package/vendor check,Medium,Lab-only host,Check package version and vendor advisory before change
+LAB-02,admin-vm,SSH reachable from student subnet,Exposed administrative service,Confirmed in lab path,High,Should be management subnet only,Restrict source range and retest from both segments
+LAB-03,web-vm,Scanner flags TLS setting,Weak protocol/configuration,Unconfirmed,Low,Scanner handshake did not complete,Validate with approved configuration inspection
+LAB-04,db-vm,Credentialed check did not authenticate,Incomplete coverage,Confirmed scan limitation,High,No package inventory captured,Arrange approved lab credentials and rescan

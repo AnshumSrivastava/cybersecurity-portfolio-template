@@ -1,0 +1,5 @@
+scenario_id,description,expected_rule,expected_alert,observed_result,false_positive_notes
+SC-01,Several failed sign-ins then a success from one fictional source,Repeated failure then success,Yes,,
+SC-02,One mistyped password then successful sign-in,Threshold should not fire,No,,
+SC-03,Normal sign-in from known baseline context,No unusual-context alert,No,,
+SC-04,Endpoint alert correlated with sign-in anomaly,Correlate related events,Yes,,

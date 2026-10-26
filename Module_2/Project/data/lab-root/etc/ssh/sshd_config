@@ -1,0 +1,4 @@
+# Controlled fixture: effective settings must be verified separately on a real host.
+PermitRootLogin no
+PasswordAuthentication no
+AllowUsers labuser

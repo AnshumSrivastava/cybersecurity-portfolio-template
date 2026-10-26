@@ -1,0 +1,6 @@
+Oct 20 09:00:01 lab sshd[100]: Failed password for learner from 192.0.2.44 port 50100 ssh2
+Oct 20 09:00:02 lab sshd[101]: Failed password for learner from 192.0.2.44 port 50101 ssh2
+Oct 20 09:00:03 lab sshd[102]: Failed password for learner from 192.0.2.44 port 50102 ssh2
+Oct 20 09:00:04 lab sshd[103]: Failed password for learner from 192.0.2.44 port 50103 ssh2
+Oct 20 09:00:05 lab sshd[104]: Failed password for learner from 192.0.2.44 port 50104 ssh2
+Oct 20 09:01:00 lab sshd[105]: Accepted publickey for admin_demo from 198.51.100.10 port 50200 ssh2

@@ -1,0 +1,5 @@
+asset_id,ip_or_range,role,zone,owner,criticality,expected_services,assessment_method,status,notes
+LAB-RTR,192.0.2.1,router-firewall,edge,Network Owner,high,NAT;stateful filtering;DNS forwarding,documentation review,not directly tested,Firewall configuration out of scope
+ANALYST-01,192.0.2.10,assessment workstation,lab-user,Training Team,medium,none,scan source and packet observer,reviewed,Only approved source for limited observation
+LAB-WEB-01,192.0.2.25,training web service,lab-server,Web Owner,medium,HTTP redirect;HTTPS application,limited TCP observation,reviewed,Ports 22 80 443 only
+LAB-DNS,192.0.2.53,lab resolver,lab-infrastructure,Network Owner,medium,DNS,derived capture observation,observed only,Resolver policy and configuration out of scope

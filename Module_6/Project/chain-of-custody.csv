@@ -1,0 +1,3 @@
+evidence_id,description,source,collector,time_collected_with_timezone,hash_algorithm,hash_value,original_or_copy,storage_location,transfer_from,transfer_to,time_transferred,action_or_notes
+E-01,,,,,,,,,,,,
+E-02,,,,,,,,,,,,

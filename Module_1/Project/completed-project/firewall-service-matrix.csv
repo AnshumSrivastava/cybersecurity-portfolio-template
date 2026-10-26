@@ -1,0 +1,6 @@
+rule_id,source_zone,destination_asset,protocol_port,required_for,policy_intent,owner,review_frequency,validation
+FW-01,lab-user,LAB-DNS,UDP/TCP 53,approved lab name resolution,allow only resolver access from lab user segment,Network Owner,quarterly,approved DNS query from ANALYST-01 only
+FW-02,lab-user,LAB-WEB-01,TCP 443,training web application,allow HTTPS from documented lab user segment,Web Owner,quarterly,approved HTTPS connection
+FW-03,lab-user,LAB-WEB-01,TCP 80,HTTP-to-HTTPS redirect only,allow only if redirect behavior is verified,Web Owner,after web change,HTTP request returns HTTPS redirect without sensitive content
+FW-04,any,LAB-WEB-01,TCP 22,no approved remote administration exposure,deny,Network Owner,quarterly,limited scan reports closed or filtered from approved source
+FW-05,any,any,all other inbound,no documented business need,deny by default subject to approved exception process,Network Owner,quarterly,rule review against current asset inventory
